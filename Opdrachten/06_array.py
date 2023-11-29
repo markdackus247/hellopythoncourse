@@ -3,27 +3,15 @@ Author: Mark Dackus
 Date: 26-11-2023
 Script: Arrays
 """
-import os
-import datetime
+cijfers_rekenen = [5.1, 8.3, 7.2, 8.1, 5.2, 9.3]
+aantal_cijfers_rekenen = len(cijfers_rekenen)
 
-# Haal de datum en tijd van vandaag op en sla deze op in de variable today.
-vandaag_datumtijd = datetime.date.today()
+cijfers_rekenen.append(5.3)
+cijfers_rekenen.append(6.4)
 
-# Verander het formaat naar YYYY-MM-DD. Sla
-# Bijvoorbeeld 2023-11-26
-vandaag_datum = vandaag_datumtijd.strftime("%Y-%m-%d")
+aantal_cijfers_rekenen = len(cijfers_rekenen)
 
-gebruiker = {
-    "username": "administrator",
-    "firstname": "Gerard",
-    "lastname": "Hoeven",
-    "creationDate": vandaag_datum
-}
+gemiddelde_rekenen = sum(cijfers_rekenen) / len(cijfers_rekenen)
+gemiddelde_rekenen_een_decimaal = round(gemiddelde_rekenen, 1)
 
-print("Gebruikersnaam: ", gebruiker["username"])
-print("Voornaam: ", gebruiker["firstname"])
-print("Achernaam: ", gebruiker["lastname"])
-print("Aanmaakdatum: ", gebruiker["creationDate"])
-
-gebruiker["username"] = "admin"
-print("Nieuwe gebruikersnaam: ", gebruiker["username"])
+print(f"Gemiddelde: {gemiddelde_rekenen_een_decimaal}")
