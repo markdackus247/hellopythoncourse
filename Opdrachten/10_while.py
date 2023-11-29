@@ -11,7 +11,7 @@ while not invoer_juist:
         tafel_van = int(tafel_van_input)
         invoer_juist = True
 
-start = 1
+start = 0
 while (start < 10):
     start = start + 1
     antwoord = start * tafel_van
