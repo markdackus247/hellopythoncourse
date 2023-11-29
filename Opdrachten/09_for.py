@@ -10,3 +10,6 @@ for bestandsnaam in bestanden_aan_te_maken:
     
     with open(bestandsnaam, 'w') as f:
         f.write('Dit is het bestand ' + bestandsnaam)
+
+# for a in range(11):
+#     print(a)
